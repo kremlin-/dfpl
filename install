@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# install dfpl
+cp ./dfpl.sh ./dfpl
+chmod +x ./dfpl
+mv ./dfpl /usr/bin/dfpl

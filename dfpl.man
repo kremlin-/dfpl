@@ -1,0 +1,75 @@
+.\" Process this file with
+.\" groff -man -Tascii foo.1
+.\"
+.TH dfpl 1 "JAN 2014" Linux "User Manuals"
+.SH NAME
+dfpl \- powerlevel dwarf fortress adventure character
+.SH SYNOPSIS
+.B dfpl throw NUM [
+.I inv-keysym
+.B ]
+.br
+.B dfpl pick NUM [
+.I ground-keysym
+.B ]
+.br
+.B dfpl chat NUM
+.br
+.B dfpl stay NUM
+.br
+.B dfpl circle NUM
+.SH DESCRIPTION
+.B dfpl
+powerlevels dwarf fortress adventure mode characters via xorg macros very,
+very quickly. dfpl should only be run while dwarf fortress is open with a
+loaded adventure mode character.
+.PP
+.PP
+.B dfpl pick
+is useful for picking up large amounts of rocks to train throwing
+.PP
+.PP
+.B dfpl throw
+is useful for throwing rocks very quicky to build throwing skill + attributes
+.PP
+.PP
+.B dfpl stay
+is useful for skipping turns and allowing weak enemies to attack you many times, building armor/dodge/etc skill + attributes
+.PP
+.PP
+.B dfpl chat
+is useful for repeatedly talking to npcs ('surroundings' option) to reveal large amounts of sites/secrets
+.PP
+.PP
+.B dfpl circle
+is useful for building sneak/swim skill + attributes
+.SH EXAMPLES
+.IP "dfpl pick 20 e"
+picks 20 rocks off the ground, assuming they occupy the 'e' key position in the pickup menu ('g') (default: 'a')
+.IP "dfpl throw 400 s"
+throws 400 rocks beginning with inventory slot 's' (default: 'f')
+.IP "dfpl chat 1000"
+chats (presses enter) 1000 times, useful for spamming 'ask about surroundings' to reveal secrets
+.IP "dfpl stay 1000"
+waits (presses period) for 1000 turns
+.IP "dfpl circle 100"
+moves in a 4-square circle 100 times
+.SH OPTIONS
+.IP "-s, --sleep FLOAT"
+sets the sleep time between actions. default is 0.15
+.IP "-w, --winname STRING"
+specify a window to direct keyclicks. default is, obviously, "Dwarf Fortress"
+.IP "-r, --return-keysym STRING"
+set a custom return keysym. default is KP_Enter
+.IP "-v, --version"
+returns version number, exits
+.IP "-f, --fast"
+enables fast mode
+.SH AUTHOR
+written by kremlin (kremlin.cc)
+.SH COPYRIGHT
+copyright © 2014 kremlin. license: GPLv2
+.br
+this is free software: you are free to change and redistribute it. there is
+.B no warranty
+, to the extent permitted by law.
