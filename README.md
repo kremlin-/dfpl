@@ -20,7 +20,7 @@ type "man dfpl" for more information
 
 ###installation
 
-arch linux pkgbuild found [here](http://coming.soon)
+arch linux pkgbuild found [here](http://aur.archlinux.org/packages/dfpl-git) and also [here](http://aur.archlinux.org/packages/dfpl)
 otherwise, run 'sudo ./install' (no manpage, debian package coming soon)
 
 ###contributing
