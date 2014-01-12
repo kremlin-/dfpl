@@ -14,9 +14,9 @@ type "man dfpl" for more information
 
 ###dependencies
 
-x server
-xdotool
-bash
+ * x server
+ * xdotool
+ * bash
 
 ###installation
 
